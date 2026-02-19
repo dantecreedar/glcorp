@@ -17,14 +17,14 @@ function Contact() {
           <div className="mt-4 space-y-3 text-sm text-black/70">
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-black/60" />
-              <a href="mailto:contacto@glconstrucciones.com">
-                contacto@glconstrucciones.com
+              <a href="mailto:briangalli.cloud1993@gmail.com">
+                briangalli.cloud1993@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3">
               <FaWhatsapp className="text-black/60" />
-              <a href="https://wa.me/5215512345678" target="_blank">
-                +52 1 55 1234 5678
+              <a href="https://wa.me/3764287514" target="_blank">
+                3764287514
               </a>
             </div>
           </div>

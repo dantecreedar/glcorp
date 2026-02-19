@@ -43,7 +43,7 @@ function Home() {
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            href="https://wa.me/5215512345678"
+            href="https://wa.me/3764287514"
             target="_blank"
             rel="noreferrer"
             className="btn-cta rounded-full px-7 py-3 text-xs font-semibold tracking-[0.28em] uppercase"
