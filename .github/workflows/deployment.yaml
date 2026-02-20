@@ -1,0 +1,23 @@
+name: Deploy to develop
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - develop
+jobs:
+  deploy:
+    name: Deploy realizado por ${{ github.actor }}
+    runs-on: develop
+    environment: develop
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies and build
+        run: npm ci && npm run build
+
+      - name: Serve frontend
+        run: |
+          sudo mkdir -p /usr/share/nginx/glcorp/
+          sudo rm -rf /usr/share/nginx/glcorp/*
+          sudo cp -r dist/* /usr/share/nginx/glcorp/
+          sudo systemctl reload nginx
